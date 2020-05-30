@@ -23,3 +23,34 @@
     </div>
 </div>
 </div> -->
+<div class="container mt-5" *ngIf="hide">
+    
+    <div class="row">
+      <div class="col-sm">
+        
+    
+      <a class="btn btn-primary" href="{{userObject.html_url}}" role="button">{{userObject.name}}</a>
+      </div>
+      <div class="col-sm">
+        <h5>ID:{{userObject.id}}</h5>
+      </div>
+      <div class="col-sm">
+        <img src="{{userObject.avatar_url}}" class="img-fluid" alt="Responsive image" style="width: 150px;">
+      </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-sm">
+          
+            <h5> Number of Followers: {{userObject.followers}}</h5>
+        </div>
+        <div class="col-sm">
+          <h5>Number of Following: {{userObject.following}}</h5>
+        </div>
+        <div class="col-sm">
+            <h5>Total Number of Repository: {{userObject.public_repos}}</h5>
+        </div>
+      </div>
+    </div>  
+
+  </div>
